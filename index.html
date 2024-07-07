@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arya</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+
+<!-- Header Section -->
+<header class="bg-white shadow">
+    <nav class="container mx-auto px-9 py-6 flex items-center justify-between">
+        <div class="text-2xl font-semibold"><a href="#" class="text-cyan-800">Hously</a></div>
+        <div class="hidden md:flex space-x-4 font-semibold">
+            <div class="relative group">
+                <a href="#" class="text-gray-800 hover:text-cyan-500">Home</a>
+                <div class="absolute hidden group-hover:block rounded shadow-lg mt-2 w-48">
+                    <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">Section 1</a>
+                    <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">Section 2</a>
+                    <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">Section 3</a>
+                </div>
+            </div>
+            <a href="#" class="text-gray-800 hover:text-cyan-500">Buy</a>
+            <a href="#" class="text-gray-800 hover:text-cyan-500">Sell</a>
+            <a href="#" class="text-gray-800 hover:text-cyan-500">Listing</a>
+            <a href="#" class="text-gray-800 hover:text-cyan-500">Pages</a>
+            <a href="#" class="text-gray-800 hover:text-cyan-500">Contact</a>
+            <a href="#" class="text-gray-800 hover:text-cyan-500">Signup</a>
+        </div>
+        <div class="md:hidden flex items-center">
+            <button id="nav-toggle" class="text-gray-800 focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                </svg>
+            </button>
+        </div>
+    </nav>
+    <div id="nav-menu" class="hidden md:hidden font-semibold">
+        <ul>
+            <li class="relative group">
+                <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-cyan-100">Home</a>
+                <div class="absolute hidden group-hover:block rounded shadow-lg mt-2 w-48">
+                    <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-cyan-100">Section 1</a>
+                    <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-cyan-100">Section 2</a>
+                    <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-cyan-100">Section 3</a>
+                </div>
+            </li>
+            <li><a href="#" class="block px-4 py-2 text-gray-800 hover:text-cyan-500">Buy</a></li>
+            <li><a href="#" class="block px-4 py-2 text-gray-800 hover:text-cyan-500">Sell</a></li>
+            <li><a href="#" class="block px-4 py-2 text-gray-800 hover:text-cyan-500">Listing</a></li>
+            <li><a href="#" class="block px-4 py-2 text-gray-800 hover:text-cyan-500">Pages</a></li>
+            <li><a href="#" class="block px-4 py-2 text-gray-800 hover:text-cyan-500">Contact</a></li>
+            <li><a href="#" class="block px-4 py-2 text-gray-800 hover:text-cyan-500">Signup</a></li>
+        </ul>
+    </div>
+</header>
+
+<!-- Hero Section -->
+<section id="hero" class="bg-gray-100 py-20">
+    <div class="container mx-auto text-center">
+        <h1 class="text-4xl font-bold text-gray-800 mb-4">Welcome to Hously</h1>
+        <p class="text-xl text-gray-600 mb-6">Your one-stop solution for real estate needs.</p>
+        <div class="flex justify-center">
+            <div class="flex w-full max-w-md">
+                <input type="text" class="w-full px-4 py-2 border rounded-l-lg focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="City, Address, Zip : ">
+                <button type="submit" class="px-6 py-2 bg-pink-500 text-white rounded-r-lg hover:bg-pink-600 focus:outline-none">Search</button>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Features Section -->
+<section id="features" class="py-16 bg-gray-100 text-center">
+    <div class="container mx-auto px-4">
+        <div class="flex flex-wrap justify-around">
+            <div class="bg-white rounded-lg shadow-lg m-4 flex-1 max-w-xs transition-transform transform hover:-translate-y-2">
+                <img src="images/residential.jpg" alt="Image 1" class="w-full rounded-md mb-4">
+                <div class="card-info">
+                    <h3 class="text-2xl font-semibold mb-2">Residential</h3>
+                    <p class="text-gray-600 mb-6">51 Listings</p>
+                </div>
+            </div>
+            <div class="bg-white rounded-lg shadow-lg  m-4 flex-1 max-w-xs transition-transform transform hover:-translate-y-2">
+                <img src="images/commercial.jpg" alt="Image 2" class="w-full rounded-md mb-4">
+                <div class="card-info">
+                    <h3 class="text-2xl font-semibold mb-2">Commercial</h3>
+                    <p class="text-gray-600 mb-6">150 Listings</p>
+                </div>
+            </div>
+            <div class="bg-white rounded-lg shadow-lg m-4 flex-1 max-w-xs transition-transform transform hover:-translate-y-2">
+                <img src="images/land.jpg" alt="Image 3" class="w-full rounded-md mb-4">
+                <div class="card-info">
+                    <h3 class="text-2xl font-semibold mb-2">Land</h3>
+                    <p class="text-gray-600 mb-6">305 Listings</p>
+                </div>
+            </div>
+            <div class="bg-white rounded-lg shadow-lg m-4 flex-1 max-w-xs transition-transform transform hover:-translate-y-2">
+                <img src="images/investment.jpg" alt="Image 4" class="w-full rounded-md mb-4">
+                <div class="card-info">
+                    <h3 class="text-2xl font-semibold mb-2">Investment</h3>
+                    <p class="text-gray-600 mb-6">15 Listings</p>
+                </div>
+            </div>
+            <div class="bg-white rounded-lg shadow-lg m-4 flex-1 max-w-xs transition-transform transform hover:-translate-y-2">
+                <img src="images/industrial.jpg" alt="Image 5" class="w-full rounded-md mb-4">
+                <div class="card-info">
+                    <h3 class="text-2xl font-semibold mb-2">Industrial</h3>
+                    <p class="text-gray-600 mb-6">650 Listings</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Feature 2 Section -->
+<section id="feature-2" class="py-16 text-center">
+    <div class="feature-2-container max-w-full mx-auto">
+        <div class="feature-2-grid grid grid-cols-1 gap-8 mb-8">
+            <div class="feature-2-info">
+                <h2 class="text-2xl mb-2">Why Choose Us</h2>
+                <p class="text-base text-gray-600">We provide the best real estate services in the industry with top-notch customer support and seamless transaction processes.</p>
+            </div>
+            <div class="feature-2-info">
+                <h2 class="text-2xl mb-2">Our Expertise</h2>
+                <p class="text-base text-gray-600">Our team consists of experienced professionals who are well-versed in the real estate market, ensuring you get the best deals and advice.</p>
+            </div>
+        </div>
+        <div class="feature-2-cards grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="image-card2 p-8 rounded-lg text-center flex flex-col items-center">
+                <img src="images/rentIcon.png" alt="Image 6" class="max-w-[60px] mb-4">
+                <div class="card-info p-4">
+                    <h4 class="mb-4">Rent a House</h4>
+                    <p class="text-sm text-gray-500 mb-4">If the distribution of letters and 'words' is random, the reader will not be distracted from making.</p>
+                    <a href="#" class="read-more text-blue-600 font-bold hover:text-lg">Read More <span>&rarr;</span></a>
+                </div>
+            </div>
+            <div class="image-card2 p-8 rounded-lg text-center flex flex-col items-center">
+                <img src="images/buyIcon.png" alt="Image 7" class="max-w-[60px] mb-4">
+                <div class="card-info p-4">
+                    <h4 class="mb-4">Buy a House</h4>
+                    <p class="text-sm text-gray-500 mb-4">If the distribution of letters and 'words' is random, the reader will not be distracted from making.</p>
+                    <a href="#" class="read-more text-blue-600 font-bold hover:text-lg">Read More <span>&rarr;</span></a>
+                </div>
+            </div>
+            <div class="image-card2 p-8 rounded-lg text-center flex flex-col items-center">
+                <img src="images/sellIcon.png" alt="Image 8" class="max-w-[60px] mb-4">
+                <div class="card-info p-4">
+                    <h4 class="mb-4">Sell a House</h4>
+                    <p class="text-sm text-gray-500 mb-4">If the distribution of letters and 'words' is random, the reader will not be distracted from making.</p>
+                    <a href="#" class="read-more text-blue-600 font-bold hover:text-lg">Read More <span>&rarr;</span></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Featured Properties Section -->
+<section id="featured-properties" class="py-16 text-center">
+    <div class="featured-container max-w-full mx-auto">
+        <h2 class="text-2xl mb-2">Featured Properties</h2>
+        <p class="text-base text-gray-600 mb-8">A great platform to buy, sell and rent your properties without any agent or commissions.</p>
+        <div class="property-grid grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Property Card 1 -->
+            <div class="property-card rounded-lg shadow-lg overflow-hidden text-left flex flex-col">
+                <img src="images/hillshire.jpg" alt="Property 1" class="w-full h-auto">
+                <div class="property-info p-6">
+                    <h3 class="text-xl mb-2">10765 Hillshire Ave, Baton Rouge, LA 70810, USA</h3>
+                    <ul class="property-details flex gap-4 text-sm text-gray-600 mb-4">
+                        <li>8000sqf</li>
+                        <li>4 Beds</li>
+                        <li>4 Baths</li>
+                    </ul>
+                    <p class="property-price text-base mb-2">Price: $5000</p>
+                    <p class="property-rating text-base mb-2">Rating: <span class="text-yellow-500">★★★★★</span> 5(30)</p>
+                </div>
+            </div>
+            <!-- Repeated for other property cards -->
+            <div class="property-card rounded-lg shadow-lg overflow-hidden text-left flex flex-col">
+                <img src="images/stonewall.jpg" alt="Property 2" class="w-full h-auto">
+                <div class="property-info p-6">
+                    <h3 class="text-xl mb-2">59345 Stonewall Dr, Plaquemine, LA 70764, USA</h3>
+                    <ul class="property-details flex gap-4 text-sm text-gray-600 mb-4">
+                        <li>8000sqf</li>
+                        <li>4 Beds</li>
+                        <li>4 Baths</li>
+                    </ul>
+                    <p class="property-price text-base mb-2">Price: $5000</p>
+                    <p class="property-rating text-base mb-2">Rating: <span class="text-yellow-500">★★★★★</span> 5(30)</p>
+                </div>
+            </div>
+            <div class="property-card rounded-lg shadow-lg overflow-hidden text-left flex flex-col">
+                <img src="images/sandbar.jpg" alt="Property 3" class="w-full h-auto">
+                <div class="property-info p-6">
+                    <h3 class="text-xl mb-2">3723 Sandbar Dr, Addis, LA 70710, USA</h3>
+                    <ul class="property-details flex gap-4 text-sm text-gray-600 mb-4">
+                        <li>8000sqf</li>
+                        <li>4 Beds</li>
+                        <li>4 Baths</li>
+                    </ul>
+                    <p class="property-price text-base mb-2">Price: $5000</p>
+                    <p class="property-rating text-base mb-2">Rating: <span class="text-yellow-500">★★★★★</span> 5(30)</p>
+                </div>
+            </div>
+            <div class="property-card rounded-lg shadow-lg overflow-hidden text-left flex flex-col">
+                <img src="images/royal.jpg" alt="Property 4" class="w-full h-auto">
+                <div class="property-info p-6">
+                    <h3 class="text-xl mb-2">Lot 21 Royal Oak Dr, Prairieville, LA 70769, USA</h3>
+                    <ul class="property-details flex gap-4 text-sm text-gray-600 mb-4">
+                        <li>8000sqf</li>
+                        <li>4 Beds</li>
+                        <li>4 Baths</li>
+                    </ul>
+                    <p class="property-price text-base mb-2">Price: $5000</p>
+                    <p class="property-rating text-base mb-2">Rating: <span class="text-yellow-500">★★★★★</span> 5(30)</p>
+                </div>
+            </div>
+            <div class="property-card rounded-lg shadow-lg overflow-hidden text-left flex flex-col">
+                <img src="images/boyd.jpg" alt="Property 5" class="w-full h-auto">
+                <div class="property-info p-6">
+                    <h3 class="text-xl mb-2">710 Boyd Dr, Unit #1102, Baton Rouge, LA 70808, USA</h3>
+                    <ul class="property-details flex gap-4 text-sm text-gray-600 mb-4">
+                        <li>8000sqf</li>
+                        <li>4 Beds</li>
+                        <li>4 Baths</li>
+                    </ul>
+                    <p class="property-price text-base mb-2">Price: $5000</p>
+                    <p class="property-rating text-base mb-2">Rating: <span class="text-yellow-500">★★★★★</span> 5(30)</p>
+                </div>
+            </div>
+            <div class="property-card rounded-lg shadow-lg overflow-hidden text-left flex flex-col">
+                <img src="images/mclain.jpg" alt="Property 6" class="w-full h-auto">
+                <div class="property-info p-6">
+                    <h3 class="text-xl mb-2">5133 Mclain Way, Baton Rouge, LA 70809, USA</h3>
+                    <ul class="property-details flex gap-4 text-sm text-gray-600 mb-4">
+                        <li>8000sqf</li>
+                        <li>4 Beds</li>
+                        <li>4 Baths</li>
+                    </ul>
+                    <p class="property-price text-base mb-2">Price: $5000</p>
+                    <p class="property-rating text-base mb-2">Rating: <span class="text-yellow-500">★★★★★</span> 5(30)</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+ <!-- Stats Section -->
+ <section class="stats-section relative bg-fixed bg-cover bg-center h-64 flex items-center justify-center" style="background-image: url('images/house.jpg')">
+    <div class="overlay absolute top-0 left-0 w-full h-full bg-black bg-opacity-50 flex items-center justify-center">
+        <div class="stats-container flex justify-around w-4/5 text-white text-center">
+            <div class="stat">
+                <h2 class="text-4xl mb-1">1,548+</h2>
+                <p class="text-lg mb-4">Properties Sell</p>
+            </div>
+            <div class="stat">
+                <h2 class="text-4xl mb-1">25+</h2>
+                <p class="text-lg mb-4">Award Gained</p>
+            </div>
+            <div class="stat">
+                <h2 class="text-4xl mb-1">9+</h2>
+                <p class="text-lg mb-4">Years Experience</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Partners Section -->
+<section id="partners" class="flex justify-around items-center py-5 px-11 bg-gray-100 flex-wrap md:flex-nowrap">
+    <div class="partner-logo flex-1 text-center p-2.5">
+        <img src="images/amazon.svg" alt="Amazon" class="max-w-[70px] h-auto">
+    </div>
+    <div class="partner-logo flex-1 text-center p-2.5">
+        <img src="images/google.svg" alt="Google" class="max-w-[70px] h-auto">
+    </div>
+    <div class="partner-logo flex-1 text-center p-2.5">
+        <img src="images/lenovo.svg" alt="Lenovo" class="max-w-[70px] h-auto">
+    </div>
+    <div class="partner-logo flex-1 text-center p-2.5">
+        <img src="images/paypal.svg" alt="PayPal" class="max-w-[70px] h-auto">
+    </div>
+    <div class="partner-logo flex-1 text-center p-2.5">
+        <img src="images/shopify.svg" alt="Shopify" class="max-w-[70px] h-auto">
+    </div>
+    <div class="partner-logo flex-1 text-center p-2.5">
+        <img src="images/spotify.svg" alt="Spotify" class="max-w-[70px] h-auto">
+    </div>
+</section>
+
+
+<!-- Testimonials and Team Section -->
+<section id="testimonials-team" class="mt-14 py-5 bg-white text-gray-900">
+    <div class="container mx-auto">
+        <!-- Testimonials Section -->
+        <div class="text-center mb-5">
+            <h2 class="text-2xl font-bold mb-4">What Our Client Say?</h2>
+            <p class="text-sm text-gray-600 mb-12">A great platform to buy, sell and rent your properties without any agent or commissions.</p>
+            <div id="testimonialCarousel" class="relative carousel slide mb-5" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <blockquote class="mx-auto max-w-3xl text-lg italic mb-4">" I highly recommend Hously as the new way to sell your home 'by owner'. My home sold in 24 hours for the asking price. Best $400 you could spend to sell your home. "</blockquote>
+                        <div class="flex flex-col items-center justify-center">
+                            <img src="images/christa.jpg" alt="Client Photo" class="rounded-full w-20 h-20 mb-3">
+                            <div class="text-center">
+                                <h4 class="text-lg font-semibold mb-0">Christa Smith</h4>
+                                <p class="text-sm text-gray-600 mb-1">Manager</p>
+                                <div class="text-yellow-500">
+                                    &#9733;&#9733;&#9733;&#9733;&#9733;
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Add more carousel items for other testimonials -->
+                    <div class="carousel-item">
+                        <blockquote class="mx-auto max-w-3xl text-lg italic mb-4">" Hously made the processes so easy. Hously instantly increased the amount of interest and ultimately saved us over $10,000. "</blockquote>
+                        <div class="flex flex-col items-center justify-center">
+                            <img src="images/calvin.jpg" alt="Client Photo" class="rounded-full w-20 h-20 mb-3">
+                            <div class="text-center">
+                                <h4 class="text-lg font-semibold mb-0">Calvin Carlo</h4>
+                                <p class="text-sm text-gray-600 mb-1">Manager</p>
+                                <div class="text-yellow-500">
+                                    &#9733;&#9733;&#9733;&#9733;&#9733;
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <blockquote class="mx-auto max-w-3xl text-lg italic mb-4">" My favorite part about selling my home myself was that we got to meet and get to know the people personally. This made it so much more enjoyable! "</blockquote>
+                        <div class="flex flex-col items-center justify-center">
+                            <img src="images/chris.jpg" alt="Client Photo" class="rounded-full w-20 h-20 mb-3">
+                            <div class="text-center">
+                                <h4 class="text-lg font-semibold mb-0">Smith Carls</h4>
+                                <p class="text-sm text-gray-600 mb-1">Manager</p>
+                                <div class="text-yellow-500">
+                                    &#9733;&#9733;&#9733;&#9733;&#9733;
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <blockquote class="mx-auto max-w-3xl text-lg italic mb-4">" Great experience all around! Easy to use and efficient. "</blockquote>
+                        <div class="flex flex-col items-center justify-center">
+                            <img src="images/jack.jpg" alt="Client Photo" class="rounded-full w-20 h-20 mb-3">
+                            <div class="text-center">
+                                <h4 class="text-lg font-semibold mb-0">Jake Paul</h4>
+                                <p class="text-sm text-gray-600 mb-1">Manager</p>
+                                <div class="text-yellow-500">
+                                    &#9733;&#9733;&#9733;&#9733;&#9733;
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-indicators flex justify-center mt-3">
+                    <button class="h-2 w-2 rounded-full bg-gray-400 mx-3" data-bs-target="#testimonialCarousel" data-bs-slide-to="0" class="active"></button>
+                    <button class="h-2 w-2 rounded-full bg-gray-400 mx-3" data-bs-target="#testimonialCarousel" data-bs-slide-to="1"></button>
+                    <button class="h-2 w-2 rounded-full bg-gray-400 mx-3" data-bs-target="#testimonialCarousel" data-bs-slide-to="2"></button>
+                    <button class="h-2 w-2 rounded-full bg-gray-400 mx-3" data-bs-target="#testimonialCarousel" data-bs-slide-to="3"></button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Team Section -->
+        <div class="text-center mb-5">
+            <h2 class="text-2xl font-bold">Meet The Agent Team</h2>
+            <p class="text-sm text-gray-600 mb-5">A great platform to buy, sell and rent your properties without any agent or commissions.</p>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+                <div class="flex flex-col items-center">
+                    <img src="images/jack.jpg" alt="Team Member 1" class="rounded-full w-40 h-40 mb-3">
+                    <h5 class="text-lg font-semibold">Jack John</h5>
+                    <p class="text-sm text-gray-600">Designer</p>
+                </div>
+                <div class="flex flex-col items-center">
+                    <img src="images/krista.jpg" alt="Team Member 2" class="rounded-full w-40 h-40 mb-3">
+                    <h5 class="text-lg font-semibold">Krista John</h5>
+                    <p class="text-sm text-gray-600">Designer</p>
+                </div>
+                <div class="flex flex-col items-center">
+                    <img src="images/roger.jpg" alt="Team Member 3" class="rounded-full w-40 h-40 mb-3">
+                    <h5 class="text-lg font-semibold">Roger Jackson</h5>
+                    <p class="text-sm text-gray-600">Designer</p>
+                </div>
+                <div class="flex flex-col items-center">
+                    <img src="images/johnny.jpg" alt="Team Member 4" class="rounded-full w-40 h-40 mb-3">
+                    <h5 class="text-lg font-semibold">Johnny English</h5>
+                    <p class="text-sm text-gray-600">Designer</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Contact Section -->
+        <div class="text-center">
+            <h2 class="text-2xl font-bold">Have Question? Get in touch!</h2>
+            <p class="text-sm text-gray-600 mb-4">A great platform to buy, sell and rent your properties without any agent or commissions.</p>
+            <button class="bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded">Contact us</button>
+        </div>
+    </div>
+</section>
+
+
+
+<!-- Footer Section -->
+<footer class="flex flex-col bg-gray-900 text-white p-4 text-center">
+    <!-- Subscribe Section -->
+    <div class="subscribe">
+        <div class="subscribe-container">
+            <h2 class="text-xl mb-2">Subscribe to Newsletter!</h2>
+            <p class="mb-4">Subscribe to get latest updates and information.</p>
+            <form class="subscribe-form flex flex-wrap justify-center items-center">
+                <input type="email" placeholder="Enter your email :" class="p-2 rounded-l-md flex-1 mb-2 md:mb-0">
+                <button type="submit" class="p-2 bg-green-500 text-white rounded-r-md flex-shrink-0">Subscribe</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Footer Content -->
+    <div class="footer-container flex flex-wrap justify-between my-8 text-left">
+        <div class="footer-col flex-1 min-w-[250px] mx-5 mb-5">
+            <h3 class="text-lg mb-2">Hously</h3>
+            <p>A great platform to buy, sell and rent your properties without any agent or commissions.</p>
+        </div>
+        <div class="footer-col flex-1 min-w-[250px] mx-5 mb-5">
+            <h3 class="text-lg mb-2">Company</h3>
+            <ul>
+                <li class="mb-2"><a href="#" class="text-gray-400 hover:text-white">About us</a></li>
+                <li class="mb-2"><a href="#" class="text-gray-400 hover:text-white">Services</a></li>
+                <li class="mb-2"><a href="#" class="text-gray-400 hover:text-white">Pricing</a></li>
+                <li class="mb-2"><a href="#" class="text-gray-400 hover:text-white">Blog</a></li>
+                <li class="mb-2"><a href="#" class="text-gray-400 hover:text-white">Login</a></li>
+            </ul>
+        </div>
+        <div class="footer-col flex-1 min-w-[250px] mx-5 mb-5">
+            <h3 class="text-lg mb-2">Useful Links</h3>
+            <ul>
+                <li class="mb-2"><a href="#" class="text-gray-400 hover:text-white">Terms of Services</a></li>
+                <li class="mb-2"><a href="#" class="text-gray-400 hover:text-white">Privacy Policy</a></li>
+                <li class="mb-2"><a href="#" class="text-gray-400 hover:text-white">Listing</a></li>
+                <li class="mb-2"><a href="#" class="text-gray-400 hover:text-white">Contact</a></li>
+            </ul>
+        </div>
+        <div class="footer-col flex-1 min-w-[250px] mx-5 mb-5">
+            <h3 class="text-lg mb-2">Contact Details</h3>
+            <ul>
+                <li class="mb-2"><a href="#" class="text-gray-400 hover:text-white">C/54 Northwest Freeway, Suite 558, Houston, USA 485</a></li>
+                <li class="mb-2"><a href="#" class="text-gray-400 hover:text-white">View on Google map</a></li>
+                <li class="mb-2"><a href="mailto:contact@example.com" class="text-gray-400 hover:text-white">contact@example.com</a></li>
+                <li class="mb-2"><a href="tel:+152534468854" class="text-gray-400 hover:text-white">+152 534-468-854</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="footer-bottom flex justify-between items-center flex-wrap gap-4 border-t border-gray-700 pt-4">
+        <p class="m-0">© 2024 Hously. Design & Develop with ❤️ by Aryaman.</p>
+        <div class="social-icons flex space-x-4">
+            <a href="#"><img src="images/facebook.svg" alt="icon1" class="w-6 h-6 hover:bg-green-500"></a>
+            <a href="#"><img src="images/twitter.svg" alt="icon2" class="w-6 h-6 hover:bg-green-500"></a>
+            <a href="#"><img src="images/linkedin.svg" alt="icon3" class="w-6 h-6 hover:bg-green-500"></a>
+            <a href="#"><img src="images/instagram.svg" alt="icon4" class="w-6 h-6 hover:bg-green-500"></a>
+            <a href="#"><img src="images/email.svg" alt="icon5" class="w-6 h-6 hover:bg-green-500"></a>
+        </div>
+    </div>
+</footer>
+
+<script src="scripts.js"></script>
+</body>
+</html>
